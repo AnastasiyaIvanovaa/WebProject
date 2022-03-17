@@ -1,0 +1,15 @@
+﻿@model List<TestViewModel>
+
+@*<h1>@Model.Name</h1>
+@for(int i=0;i<testViews.Length;i++)
+{
+<p>@Model.Description I am learning how to make my first web project.</p>
+}*@
+
+@foreach (var  item in Model)
+{
+    <h1>@item.Name</h1>
+    <p>@item.Description</p>
+}
+<a class="btn btn-primary btn-block" href="/Home">Home</a>
+
